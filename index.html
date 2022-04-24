@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="logo">Clicker v.b2</div>
+    <div id="container">
+        <div id="monety" class="main">Money: 0$</div>
+        <div id="kliker" class="main" onmousedown="klik()" onmouseup="odklik()"><img src="pickaxe.png" id="img"></div>
+        <div id="upklik" class="main" onclick="up()">Upgrade Click 100$, Upgrades: 0</div>
+        <div id="uptime" class="main" onclick="ups()">Upgrade Money per second 100$, Upgrades: 0</div>
+        <div id="nakladka"><div id="cel" class="main">To finish left: 1000000$ (0%)</div></div>
+    </div>
+    <div id="ending"></div>
+    <script src="main.js"></script>
+</body>
+</html>
