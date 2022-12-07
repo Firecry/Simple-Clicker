@@ -1,6 +1,6 @@
 let monety = 0
 let kliker = document.getElementById('kliker')
-let mnoznik = 55000
+let mnoznik = 0
 let kopanie = 100
 let koszt = 100
 let zarabianie = 0
