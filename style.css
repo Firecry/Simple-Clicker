@@ -8,21 +8,25 @@ html, body{
     user-select: none;
     color: white;
 }
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #logo{
-    width: 100vw;
+    width: 100%;
     text-align: center;
     padding: 4rem 0rem;
     font-size: 2rem;
 }
 .main{
     background: rgb(15, 15, 15);
-    width: 49.9vw;
-    padding: 5.69rem 0rem;
-    text-align: center;
-    margin: 1px;
+    width: 49.9%;
     font-size: 1.5rem;
+    text-align: center;
     cursor: pointer;
     transition: .2s;
+    height: 32.95%;
 }
 .main:hover{
     background: rgb(7, 7, 7);
@@ -32,28 +36,31 @@ html, body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-	align-items: stretch;
-	align-content: stretch;
-    height: 40rem;
+    height: 70vh;
     background: crimson;
+    gap: 3px;
+    padding: 3px;
 }
 #monety{
     background: rgb(15, 15, 15);
-    padding: 3rem 0rem;
     cursor:default;
+    height: 19.4%;
 }
 #kliker{
-    padding: 6.36rem 0rem;
+    height: 80%;
 }
 #cel{
-    background: none;
     cursor:default;
+    position: relative;
+    z-index: 2;
 }
 #img{
-    width: 300px;
-    height: 300px;
+    width: 35%;
+    aspect-ratio: 1;
     transform: rotate(0deg);
-    color: rgb(0, 87, 0);
+    background-image: url(/pickaxe.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #ending{
     position: absolute;
@@ -67,11 +74,41 @@ html, body{
     display: none;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
+.finish{
+    position: relative;
+    cursor: default;
+    background: rgb(15, 15, 15);
+    width: 49.9%;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: .2s;
+    height: 33%;
+}
 #nakladka{
     position: absolute;
-    top: 62.4%;
-    left: 50.03%;
-    height: 22vh;
-    width: 0vh;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
     background: green;
+}
+
+@media only screen and (max-width: 900px){
+    .main{
+        height: 32.8%;
+        font-size: 1rem;
+    }
+    #monety{
+        height: 19.3%;
+    }
+    #img{
+        width: 95%;
+    }
+    .finish{
+        font-size: 1rem;
+    }
+    #ending{
+        width: 70%;
+        font-size: 1.5rem;
+    }
 }

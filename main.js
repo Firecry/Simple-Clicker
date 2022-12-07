@@ -1,6 +1,6 @@
 let monety = 0
 let kliker = document.getElementById('kliker')
-let mnoznik = 0
+let mnoznik = 55000
 let kopanie = 100
 let koszt = 100
 let zarabianie = 0
@@ -89,7 +89,7 @@ setInterval(()=>{
     let result = parseFloat(objective).toFixed(0)
 
     document.getElementById('monety').innerHTML = `Money: ${monety}$`
-    document.getElementById('nakladka').style.width = `${monety / 1000000 * 100}vh`
+    document.getElementById('nakladka').style.width = `${monety / 1000000 * 100}%`
     document.getElementById('upklik').innerHTML = `Upgrade Click ${kopanie}$, Upgrades: ${mnoznik / 5}`
     document.getElementById('uptime').innerHTML = `Upgrade Automatic Investments ${koszt}$, Upgrades: ${zarabianie}`
     document.getElementById('cel').innerHTML = `To finish left ${1000000 - monety}$ (${result}%) Time: ${time}`

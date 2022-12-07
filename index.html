@@ -11,13 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="logo">Clicker v.b2</div>
+    <div id="logo">Clicker v.1.0</div>
     <div id="container">
-        <div id="monety" class="main">Money: 0$</div>
-        <div id="kliker" class="main" onmousedown="klik()" onmouseup="odklik()"><img src="pickaxe.png" id="img"></div>
-        <div id="upklik" class="main" onclick="up()">Upgrade Click 100$, Upgrades: 0</div>
-        <div id="uptime" class="main" onclick="ups()">Upgrade Money per second 100$, Upgrades: 0</div>
-        <div id="nakladka"><div id="cel" class="main">To finish left: 1000000$ (0%)</div></div>
+        <div id="monety" class="main flex"><div>Money: 0$</div></div>
+        <div id="kliker" class="main flex" onmousedown="klik()" onmouseup="odklik()"><div id="img"></div></div>
+        <div id="upklik" class="main flex right" onclick="up()">Upgrade Click 100$, Upgrades: 0</div>
+        <div id="uptime" class="main flex right" onclick="ups()">Upgrade Money per second 100$, Upgrades: 0</div>
+        <div class="flex right finish"><div id="cel">To finish left: 1000000$ (0%)</div><div id="nakladka"></div></div>
     </div>
     <div id="ending"></div>
     <script src="main.js"></script>
